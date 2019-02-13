@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">MathES</string>
+    <string name="full_app_name">MathES:\nMathematics Equations Solver</string>
+    <string name="wip">Coming Soon</string>
+
+    <string name="about_page">MathES: Mathematics Equations Solver\nBy David Tran\n2019</string>
+
+    // buttons
+    <string name="course_button">Course Sections</string>
+    <string name="calculator_button">Calculator</string>
+    <string name="graphing_button">Graphing Calculator</string>
+    <string name="forum_button">Forum</string>
+    <string name="about_button">About</string>
+</resources>
