@@ -11,4 +11,9 @@
     <string name="graphing_button">Graphing Calculator</string>
     <string name="forum_button">Forum</string>
     <string name="about_button">About</string>
+
+    // courses
+    <string name="topics">Topics</string>
+    <string name="equation">Equation</string>
+    <string name="linalg_button">Linear Algebra</string>
 </resources>

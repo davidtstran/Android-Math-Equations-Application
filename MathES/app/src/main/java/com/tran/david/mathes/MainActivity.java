@@ -51,4 +51,7 @@ public class MainActivity extends AppCompatActivity {
     public void about_button(View vw){
         setContentView(R.layout.about);
     }
+    public void linalg_button(View vw){
+        setContentView(R.layout.linear_algebra);
+    }
 }
