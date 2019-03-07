@@ -6,8 +6,13 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.EditText;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
+
+    String equation;
+    EditText equationInput;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,5 +58,16 @@ public class MainActivity extends AppCompatActivity {
     }
     public void linalg_button(View vw){
         setContentView(R.layout.linear_algebra);
+        equationInput = (EditText) findViewById(R.id.getEquation);
+    }
+    public void calculus_button(View vw){
+        setContentView(R.layout.calculus);
+        equationInput = (EditText) findViewById(R.id.getEquation);
+    }
+
+    public void done_button(View vw){
+        equation = equationInput.getText().toString();
+        TextView soln = (TextView) findViewById(R.id.solution);
+        soln.setText(equation);
     }
 }
