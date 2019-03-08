@@ -15,8 +15,13 @@
 
     // courses
     <string name="topics">Topics</string>
+    <string name="choose_topic">Choose a Topic:</string>
     <string name="giveEq">Enter an equation to solve:</string>
     <string name="equation">Equation</string>
     <string name="linalg_button">Linear Algebra</string>
     <string name="calculus_button">Calculus 1</string>
+
+    // linear algebra
+    <string name="rref_button">Row Reduced Echelon Form</string>
+    <string name="determinant_button">Determinant</string>
 </resources>
