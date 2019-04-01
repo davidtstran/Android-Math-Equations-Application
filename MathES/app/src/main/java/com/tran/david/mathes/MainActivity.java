@@ -105,5 +105,6 @@ public class MainActivity extends AppCompatActivity {
         TextView calcSoln = (TextView) findViewById(R.id.calcSolution);
         calcSoln.setText(equation);
     }
+
     /////////
 }
