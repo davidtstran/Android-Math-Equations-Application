@@ -62,6 +62,55 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.calculus);
         equationInput = (EditText) findViewById(R.id.getEquation);
     }
+    public void deriv_button(View vw){
+        TextView soln = (TextView) findViewById(R.id.solution);
+        equation = equationInput.getText().toString();
+        String printSteps = "Derivative of " + equation + ":\n";
+        String solutionE = "";
+        // solve derivative here
+        String[] equationArray = equation.split("\\+");
+        for (int i = 0; i < equationArray.length; i++) {
+            int var_x = equationArray[i].indexOf("x");
+            int constantE = Integer.parseInt(equationArray[i].substring(0, var_x));
+            int exponentE = Integer.parseInt(equationArray[i].substring(var_x + 2, equationArray[i].length()));
+            // process
+            printSteps += "(" + Integer.toString(constantE) + "*" + Integer.toString(exponentE) + ")";
+            printSteps += "x^" + "(" + Integer.toString(exponentE) + "-1)";
+            // solution
+            solutionE += Integer.toString(constantE * exponentE) + "x^";
+            solutionE += Integer.toString(exponentE - 1);
+            if (i != equationArray.length - 1){
+                printSteps += " + ";
+                solutionE += " + ";
+            }
+        }
+        soln.setText(printSteps + "\nSolution:\n" + solutionE);
+    }
+
+    public void integ_button(View vw){
+        TextView soln = (TextView) findViewById(R.id.solution);
+        equation = equationInput.getText().toString();
+        String printSteps = "Integral of " + equation + ":\n";
+        String solutionE = "";
+        // solve derivative here
+        String[] equationArray = equation.split("\\+");
+        for (int i = 0; i < equationArray.length; i++) {
+            int var_x = equationArray[i].indexOf("x");
+            double constantE = Double.parseDouble(equationArray[i].substring(0, var_x));
+            double exponentE = Double.parseDouble(equationArray[i].substring(var_x + 2, equationArray[i].length()));
+            // process
+            printSteps += "(" + Double.toString(constantE) + "/" + Double.toString(exponentE+1) + ")";
+            printSteps += "x^" + "(" + Double.toString(exponentE) + "+1)";
+            // solution
+            solutionE += Double.toString(constantE / (exponentE+1)) + "x^";
+            solutionE += Double.toString(exponentE + 1);
+            if (i != equationArray.length - 1){
+                printSteps += " + ";
+                solutionE += " + ";
+            }
+        }
+        soln.setText(printSteps + "\nSolution:\n" + solutionE + " + C");
+    }
     /////////
 
     public void done_button(View vw){

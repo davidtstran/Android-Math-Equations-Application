@@ -24,4 +24,9 @@
     // linear algebra
     <string name="rref_button">Row Reduced Echelon Form</string>
     <string name="determinant_button">Determinant</string>
+
+    // calculus
+    <string name="deriv_button">Derivative</string>
+    <string name="integ_button">Integral</string>
+
 </resources>
