@@ -33,6 +33,12 @@ public class MainActivity extends AppCompatActivity {
             case R.id.menu_home:
                 setContentView(R.layout.activity_main);
                 return true;
+            case R.id.menu_course:
+                setContentView(R.layout.courses);
+                return true;
+            case R.id.menu_calculator:
+                setContentView(R.layout.calculator);
+                return true;
             case R.id.menu_about:
                 setContentView(R.layout.about);
                 return true;

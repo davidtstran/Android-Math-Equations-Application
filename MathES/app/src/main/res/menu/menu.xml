@@ -5,7 +5,12 @@
     <item
         android:id="@+id/menu_home"
         android:title="Home" />
-
+    <item
+        android:id="@+id/menu_course"
+        android:title="Course Sections" />
+    <item
+        android:id="@+id/menu_calculator"
+        android:title="Calculator" />
     <item
         android:id="@+id/menu_about"
         android:title="About" />
