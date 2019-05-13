@@ -1,8 +1,8 @@
-# CS449-Project
-Android Project for CS449 (Foundations of Software Engineering)
+# CS449-Project <br />
+Android Project for CS449 (Foundations of Software Engineering) <br />
 
-David Tran
-MathES: Mathematics Equation Solver
+David Tran <br />
+MathES: Mathematics Equation Solver <br />
 
 Features: <br />
 On Open: <br />
